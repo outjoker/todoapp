@@ -1,8 +1,9 @@
 import { useState } from "react";
-export default function Form ({todolist, setTodolist}) {
+import styles from "./form.module.css"
+export default function Form({ todolist, setTodolist }) {
     const [todo, setTodo] = useState("");
-    
-    function handleSubmit(e){
+
+    function handleSubmit(e) {
         e.preventDefault()
         // using spread operator to hold the old items in the todoslist
         setTodolist([...todolist, todo])
@@ -11,14 +12,19 @@ export default function Form ({todolist, setTodolist}) {
         setTodo("")
     }
     return (
-        <div>
-             <form onSubmit={handleSubmit}>
-                <input 
-                    type="text" value={todo}
-                    onChange={(e)=> setTodo(e.target.value)}>
+
+        <form className={styles.todoform} onSubmit={handleSubmit}>
+            <div className={styles.inputformContainer}>
+                <input className={styles.moderninput}
+                    placeholder="Enter the ToDo item"
+                    type="text"
+                    value={todo}
+                    onChange={(e) => setTodo(e.target.value)}>
                 </input>
-                <button type="submit">Add</button>
-            </form>
-        </div>
+                <button className={styles.modernbutton} type="submit">Add</button>
+
+            </div>
+        </form>
+
     )
 }
