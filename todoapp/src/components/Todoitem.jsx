@@ -1,7 +1,11 @@
+import styles from "./todoitem.module.css"
 export default function Todoitem(props) {
     return (
-        <div>  
-            <h3>{props.item}</h3>
+        <div className={styles.item}>
+        <div className={styles.itemname}>  
+            {props.item}
+        </div>
+        <hr className={styles.differentiator} />
         </div>
     )
 }

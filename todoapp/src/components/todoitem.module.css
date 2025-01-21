@@ -1,0 +1,19 @@
+.item{
+    width: 500px;
+    color: #353935;
+    font-size: 25px;
+    margin: 0 auto;
+
+
+}
+
+.itemname{
+    font-weight: bold;
+    padding: 20px;
+
+
+}
+
+.differentiator {
+    border: 1px solid white;
+}
