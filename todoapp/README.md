@@ -7,3 +7,12 @@
         ii. TodoList Component (State is required for all the todolist - all the todo items)
             - TodoItem Component
         Since todolist component is common between Form & TodoList components passing it as state in Todo (parent component)
+
+
+### How to run the app
+
+- cd to the todoapp
+    cd todoapp 
+- run the below command 
+    npm run dev 
+##### note - make sure you have react installed and vite too. 
