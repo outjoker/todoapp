@@ -1,9 +1,19 @@
 .item{
     width: 500px;
     color: #353935;
-    font-size: 25px;
+    font-size: 20px;
     margin: 0 auto;
+}
 
+.deletebutton{
+    float: right;
+    padding: 12px 20px;
+    border: none;
+    background-color: #f7a13f;
+    color: white;
+    margin-top: -5px;
+    border-radius: 4px;
+    cursor: pointer;
 
 }
 
@@ -16,4 +26,8 @@
 
 .differentiator {
     border: 1px solid white;
+}
+
+.inputformContainer{
+    display: flex;
 }

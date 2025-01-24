@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./form.module.css"
-export default function Form({ todolist, setTodolist }) {
+export default function Form({ todolist,  setTodolist }) {
     const [todo, setTodo] = useState("");
 
     function handleSubmit(e) {
