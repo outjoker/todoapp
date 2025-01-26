@@ -9,7 +9,7 @@
     float: right;
     padding: 12px 20px;
     border: none;
-    background-color: #f7a13f;
+    background-color: #86f73f;
     color: white;
     margin-top: -5px;
     border-radius: 4px;
@@ -30,4 +30,8 @@
 
 .inputformContainer{
     display: flex;
+}
+
+.completed {
+    text-decoration: line-through;
 }
